@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gênero do dia!</title>
+        <link rel="icon" href="img/logo-spotify-icone-png-violet.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <script>
+      function search() {
+        let input = document.getElementById('search-musics').value;
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName('msc');
+      
+        if (input === '') {
+          for (let i = 0; i < x.length; i++) { 
+            x[i].style.display = 'none';
+          }
+        } else {
+          for (let i = 0; i < x.length; i++) { 
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display = 'none';
+            } else {
+                x[i].style.display = 'list-item';                 
+            }
+          }
+        }
+      }
+    </script>
+    <body id="body">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+          <a href="gen-mus.html"><img src="img/logo-spotify-icone-png-violet.png" class="logo"></a>
+          O que vamos ouvir hoje?
+        </div>
+        <div class="searchbar">
+          <input type="text" id="search-musics" placeholder="Buscar" autocomplete="off" onkeyup="search()">
+          <ul class="musics-list">
+            <center><li class="msc"><a href="dance-pop.html#wake-me-up">Wake Me Up - Avicii</a></li>
+            <li class="msc"><a href="dance-pop.html#wake-me-up">Blinding Lights - The Weeknd</a></li>
+            <li class="msc"><a href="dance-pop.html#wake-me-up">Judas - Lady Gaga</a></li>
+            <li class="msc"><a href="dance-pop.html#say-it-right">Say It Right - Nelly Furtado</a></li>
+            <li class="msc"><a href="dance-pop.html#say-it-right">motive (with Doja Cat) - Ariana Grande, Doja Cat</a></li>
+            <li class="msc"><a href="dance-pop.html#say-it-right">Solo (feat. Demi Lovato) - Clean Bandit, Demi Lovato</a></li>
+            <li class="msc"><a href="dance-pop.html#lose-control">Lose Control - MEDUZA, Becky Hill, Goodboys</a></li>
+            <li class="msc"><a href="dance-pop.html#lose-control">Nothing Breaks Like a Heart (feat. Miley Cyrus) - Mark Ronson, Miley Cyrus</a></li>
+            <li class="msc"><a href="dance-pop.html#lose-control">Save Your Tears - The Weeknd</a></li>
+            <li class="msc"><a href="dance-pop.html#i-follow-rivers">I Follow Rivers - The Magician Remix - Lykke Li, The Magician</a></li>
+            <li class="msc"><a href="dance-pop.html#i-follow-rivers">Promiscuous - Nelly Furtado, Timbaland</a></li>
+            <li class="msc"><a href="dance-pop.html#i-follow-rivers">boyfriend (with Social House) - Ariana Grande, Social House</a></li>
+            <li class="msc"><a href="dance-pop.html#feels">Feels (feat. Pharrell Williams, Katy Perry & Big Sean) - Calvin Harris, Pharrell Williams, Katy Perry, Big Sean, Funk Wav</a></li>
+            <li class="msc"><a href="dance-pop.html#feels">Moves Like Jagger - Maroon 5, Christina Aguilera</a></li>
+            <li class="msc"><a href="dance-pop.html#feels">Adventure of a Lifetime - Coldplay</a></li>
+            <li class="msc"><a href="pop.html#locked-out-of-heaven">Locked out of Heaven - Bruno Mars</a></li>
+            <li class="msc"><a href="pop.html#locked-out-of-heaven">Never Forget You - Noisettes</a></li>
+            <li class="msc"><a href="pop.html#locked-out-of-heaven">Only Love Can Hur Like This - Paloma Faith</a></li>
+            <li class="msc"><a href="pop.html#wait-a-minute">Wait a Minute! - WILLOW</a></li>
+            <li class="msc"><a href="pop.html#wait-a-minute">Paradise - Coldplay</a></li>
+            <li class="msc"><a href="pop.html#wait-a-minute">Your Song - Lady Gaga</a></li>
+            <li class="msc"><a href="pop.html#outside">Outside (feat. Ellie Gouldig) - Calvin Harris, Ellie Goulding</a></li>
+            <li class="msc"><a href="pop.html#outside">Die For You - The Weeknd</a></li>
+            <li class="msc"><a href="pop.html#outside">Give It To Me - Timbaland, Justin Timberlake, Nelly Furtado</a></li>
+            <li class="msc"><a href="pop.html#viva-la-vida">Viva La Vida - Coldplay</a></li>
+            <li class="msc"><a href="pop.html#viva-la-vida">Back To Black - Amy Winehouse</a></li>
+            <li class="msc"><a href="pop.html#viva-la-vida">Harleys In Hawaii - Katy Perry</a></li>
+            <li class="msc"><a href="pop.html#sugar">Sugar - Maroon 5</a></li>
+            <li class="msc"><a href="pop.html#sugar">Dancing Queen - ABBA</a></li>
+            <li class="msc"><a href="pop.html#sugar">Watermelon Sugar - Harry Styles</a></li>
+            <li class="msc"><a href="rock.html#i-dont-want-to-miss-a-thing">I Don't Want To Miss A Thing - Aerosmith</a></li>
+            <li class="msc"><a href="rock.html#i-dont-want-to-miss-a-thing">I Want to Know What Love Is - Foreigner</a></li>
+            <li class="msc"><a href="rock.html#i-dont-want-to-miss-a-thing">Bring Me To Life - Evanescence</a></li>
+            <li class="msc"><a href="rock.html#dream-on">Dream On - Aerosmith</a></li>
+            <li class="msc"><a href="rock.html#dream-on">Enjoy the Silence - Depeche Mode</a></li>
+            <li class="msc"><a href="rock.html#dream-on">Don't Speak - No Doubt</a></li>
+            <li class="msc"><a href="rock.html#changes">Changes - Black Sabbath</a></li>
+            <li class="msc"><a href="rock.html#changes">Californication - Red Hot Chili Peppers</a></li>
+            <li class="msc"><a href="rock.html#changes">Chop Suey! - System Of A Down</a></li>
+            <li class="msc"><a href="rock.html#the-great-gig-in-the-sky">The Great Gig in the Sky - Pink Floyd</a></li>
+            <li class="msc"><a href="rock.html#the-great-gig-in-the-sky">Highway to Hell - AC/DC</a></li>
+            <li class="msc"><a href="rock.html#the-great-gig-in-the-sky">November Rain - Guns N' Roses</a></li>
+            <li class="msc"><a href="rock.html#knockin-on-heavens-door">Knockin' On Heaven's Door - Guns N' Roses</a></li>
+            <li class="msc"><a href="rock.html#knockin-on-heavens-door">Forest - Sysrtem Of A Down</a></li>
+            <li class="msc"><a href="rock.html#knockin-on-heavens-door">Sweet Child O' Mine - Guns N' Roses</a></li>
+            <li class="msc"><a href="rock-nacional.html#meu-erro">Meu Erro - Os Paralamas do Sucesso</a></li>
+            <li class="msc"><a href="rock-nacional.html#meu-erro">Pais E Filhos - Legião Urbana</a></li>
+            <li class="msc"><a href="rock-nacional.html#meu-erro">Pelados Em Santos - Mamonas Assassinas</a></li>
+            <li class="msc"><a href="rock-nacional.html#bete-balanço">Bete Balanço - Barão Vermelho</a></li>
+            <li class="msc"><a href="rock-nacional.html#bete-balanço">O Segundo Sol - Cássia Eller</a></li>
+            <li class="msc"><a href="rock-nacional.html#bete-balanço">Tempo Perdido - Legião Urbana</a></li>
+            <li class="msc"><a href="rock-nacional.html#era-um-garoto">Era um Garoto, Que Como Eu, Amava os Beatles e os Rolling Stones - Engenheiros do Hawaii</a></li>
+            <li class="msc"><a href="rock-nacional.html#era-um-garoto">Saideira - Skank</a></li>
+            <li class="msc"><a href="rock-nacional.html#era-um-garoto">Lanterna Dos Afogados - Os Paralamas Do Sucesso</a></li>
+            <li class="msc"><a href="rock-nacional.html#como-tudo-deve-ser">Como Tudo Deve Ser - Charlie Brown Jr.</a></li>
+            <li class="msc"><a href="rock-nacional.html#como-tudo-deve-ser">Além do Horizonte - Jota Quest</a></li>
+            <li class="msc"><a href="rock-nacional.html#como-tudo-deve-ser">Malandragem - Cássia Eller</a></li>
+            <li class="msc"><a href="rock-nacional.html#mulher-de-fases">Mulher de Fases - Raimundos</a></li>
+            <li class="msc"><a href="rock-nacional.html#mulher-de-fases">Vou Deixar - Skank</a></li>
+            <li class="msc"><a href="rock-nacional.html#mulher-de-fases">Anna Júlia - Los Hermanos</a></li>
+            <li class="msc"><a href="rb.html#lost-in-the-fire">Lost in the Fire - Gesafelstein, The Weeknd</a></li>
+            <li class="msc"><a href="rb.html#lost-in-the-fire">Kill Bill - SZA</a></li>
+            <li class="msc"><a href="rb.html#lost-in-the-fire">Moonlight - Kali Uchis</a></li>
+            <li class="msc"><a href="rb.html#over">Over - Lucky Daye</a></li>
+            <li class="msc"><a href="rb.html#over">Popular - The Weeknd, Playboi Carti, Madonna</a></li>
+            <li class="msc"><a href="rb.html#over">Not Around - Nova</a></li>
+            <li class="msc"><a href="rb.html#american-boy">American Boy - Estelle, Kanye West</a></li>
+            <li class="msc"><a href="rb.html#american-boy">Call Out My Name - The Weeknd</a></li>
+            <li class="msc"><a href="rb.html#american-boy">Mirrors - Justin Timbarlake</a></li>
+            <li class="msc"><a href="rb.html#industry-baby">INDUSTRY BABY - Lil Nas X, Jack Harlow</a></li>
+            <li class="msc"><a href="rb.html#industry-baby">Earned It - The Weeknd</a></li>
+            <li class="msc"><a href="rb.html#industry-baby">Sure Thing - Miguel</a></li>
+            <li class="msc"><a href="rb.html#hotel-ugly">Stevie Doesn't Wonder - Hotel Ugly</a></li>
+            <li class="msc"><a href="rb.html#hotel-ugly">Honey See You - ISTERIF</a></li>
+            <li class="msc"><a href="rb.html#hotel-ugly">Beautiful Girls - Sean Kingston</a></li>
+            <li class="msc"><a href="indie.html#reflections">Reflections - The Neighbourhood</a></li>
+            <li class="msc"><a href="indie.html#reflections">I Wanna Be Yours - Arctic Monkeys</a></li>
+            <li class="msc"><a href="indie.html#reflections">The Less I Know The Better - Tame Impala</a></li>
+            <li class="msc"><a href="indie.html#arctic">Why'd You Only Call Me When You're High? - Arctic Monkeys</a></li>
+            <li class="msc"><a href="indie.html#arctic">Pumped Up Kicks - Foster The People</a></li>
+            <li class="msc"><a href="indie.html#arctic">Not Allowed - TV Girl</a></li>
+            <li class="msc"><a href="indie.html#let-it-happen">Let It Happen - Tame Impala</a></li>
+            <li class="msc"><a href="indie.html#let-it-happen">Sweater Wheater - The Neighbourhood</a></li>
+            <li class="msc"><a href="indie.html#let-it-happen">Swing Lynn - Harmless</a></li>
+            <li class="msc"><a href="indie.html#mind-over-matter">Mind Over Matter - Young the Giant</a></li>
+            <li class="msc"><a href="indie.html#mind-over-matter">Atlantis - Seafret</a></li>
+            <li class="msc"><a href="indie.html#mind-over-matter">505 - Arctic Monkeys</a></li>
+            <li class="msc"><a href="indie.html#end-of-beginning">End of Beginning - Djo</a></li>
+            <li class="msc"><a href="indie.html#end-of-beginning">Gilded Lily - Cults</a></li>
+            <li class="msc"><a href="indie.html#end-of-beginning">The Beach - The Neighbourhood</a></li>
+            <li class="msc"><a href="alternative-rock.html#stressed-out"></a>Stressed Out - Twenty One Pilots</a></li>
+            <li class="msc"><a href="alternative-rock.html#stressed-out"></a>Little Dark Age - MGMT</a></li>
+            <li class="msc"><a href="alternative-rock.html#come-a-little-closer">Come a Little Closer - Cage The Elephant</a></li>
+            <li class="msc"><a href="alternative-rock.html#come-a-little-closer">Afraid - The Neighbourhood</a></li>
+            <li class="msc"><a href="alternative-rock.html#come-a-little-closer">Clocks - Coldplay</a></li>
+            <li class="msc"><a href="alternative-rock.html#just-a-girl">Just A Girl - No Doubt</a></li>
+            <li class="msc"><a href="alternative-rock.html#just-a-girl">Do I Wanna Know? - Arctic Monkey</a></li>
+            <li class="msc"><a href="alternative-rock.html#just-a-girl">I Feel Like I'm Drowning - Two Feet</a></li>
+            <li class="msc"><a href="alternative-rock.html#seven-nation-army">Seven Nation Army - The White Stripes</a></li>
+            <li class="msc"><a href="alternative-rock.html#seven-nation-army">Out of My League - Fiftz and The Tantrums</a></li>
+            <li class="msc"><a href="alternative-rock.html#seven-nation-army">Creep - Radiohead</a></li>
+            <li class="msc"><a href="alternative-indie.html#you-get-me-so-high">You Get Me So High - The Neighbourhood</a></li>
+            <li class="msc"><a href="alternative-indie.html#you-get-me-so-high">Shut up My Momms Calling - Hotel Ugly</a></li>
+            <li class="msc"><a href="alternative-indie.html#you-get-me-so-high">Dark Red - Steve Lacy</a></li>
+            <li class="msc"><a href="alternative-indie.html#apocalypse">Apocalypse - Cigarettes After Sex</a></li>
+            <li class="msc"><a href="alternative-indie.html#apocalypse">Friends - Chase Atlantic</a></li>
+            <li class="msc"><a href="alternative-indie.html#apocalypse">For the First Time - Mac DeMarco</a></li>
+            <li class="msc"><a href="alternative-indie.html#softcore">Softcore - The Neighbourhood</a></li>
+            <li class="msc"><a href="alternative-indie.html#softcore">Riptide - Vance Joy</a></li>
+            <li class="msc"><a href="alternative-indie.html#softcore">West Coast - Lana Del Rey</a></li>
+            <li class="msc"><a href="alternative-indie.html#k">K. - Cigarettes After Sex</a></li>
+            <li class="msc"><a href="alternative-indie.html#k">Lovers Rock - TV Girl</a></li>
+            <li class="msc"><a href="alternative-indie.html#k">Black Out Days - Phantogram</a></li>
+            <li class="msc"><a href="alternative-indie.html#daddy-issues">Daddy Issues - The Neighbourhood</a></li>
+            <li class="msc"><a href="alternative-indie.html#daddy-issues">The Night We Met - Lord Huron</a></li>
+            <li class="msc"><a href="alternative-indie.html#daddy-issues">R U Mine? - Arctic Monkeys</a></li>
+            <li class="msc"><a href="mellow.html#wicked-game">Wicked Game - Chris Isaak</a></li>
+            <li class="msc"><a href="mellow.html#wicked-game">My Love Mine All Mine - Mitski</a></li>
+            <li class="msc"><a href="mellow.html#wicked-game">Goodbye Yellow Brick Road - Elton John</a></li>
+            <li class="msc"><a href="mellow.html#evergreen">Young And Beautiful - Lana Del Rey</a></li>
+            <li class="msc"><a href="mellow.html#evergreen">Heart To Heart - Mac DeMarco</a></li>
+            <li class="msc"><a href="mellow.html#evergreen">Evergreen - Richy Mitch & The Coal Miners</a></li>
+            <li class="msc"><a href="mellow.html#golden-hour">golden hour - JVKE</a></li>
+            <li class="msc"><a href="mellow.html#golden-hour">idontwannabeyouanymore - Billie Eilish</a></li>
+            <li class="msc"><a href="mellow.html#golden-hour">Glimpse of Us - Joji</a></li>
+            <li class="msc"><a href="mellow.html#sweet">Chamber Of Reflection - Mac DeMarco</a></li>
+            <li class="msc"><a href="mellow.html#sweet">Sweet - Cigarettes After Sex</a></li>
+            <li class="msc"><a href="mellow.html#sweet">It Will Rain - Bruno Mars</a></li>
+            <li class="msc"><a href="mellow.html#understand">Love In The Dark - Adele</a></li>
+            <li class="msc"><a href="mellow.html#understand">Little Things - One Direction</a></li>
+            <li class="msc"><a href="mellow.html#understand">UNDERSTAND - keshi</a></li>
+            <li class="msc"><a href="indietronica.html#idfc">Heat Waves - Glass Animals</a></li>
+            <li class="msc"><a href="indietronica.html#idfc">idfc - Tarro Remix - blackbear, Tarro</a></li>
+            <li class="msc"><a href="indietronica.html#idfc">Borderline - Tame Impala</a></li>
+            <li class="msc"><a href="indietronica.html#space-song">Space Song - Beach House</a></li>
+            <li class="msc"><a href="indietronica.html#saty-high">Stay High - Habits Remix - Tove Lo, Hippie Sabotage</a></li>
+            <li class="msc"><a href="indietronica.html#saty-high">Baby I'm Yours - Breakbot, Irfane</a></li>
+            <li class="msc"><a href="indietronica.html#makeba">Little Dark Age - MGMT</a></li>
+            <li class="msc"><a href="indietronica.html#makeba">Makeba - Jain</a></li>
+            <li class="msc"><a href="indietronica.html#makeba">Shy Away - Twenty One Pilots</a></li>
+            <li class="msc"><a href="classic-rock.html#wind-of-change">Wind Of Change - Scorpions</a></li>
+            <li class="msc"><a href="classic-rock.html#starman">Starman- David Bowie</a></li>
+            <li class="msc"><a href="classic-rock.html#starman">Don't Cry - Guns N' Roses</a></li>
+            <li class="msc"><a href="classic-rock.html#no-more-tears">I Was Made For Lovin' You - KISS</a></li>
+            <li class="msc"><a href="classic-rock.html#no-more-tears">No More Tears - Ozzy Osbourn</a></li>
+            <li class="msc"><a href="classic-rock.html#no-more-tears">Eyes Without A Face - Billy Idol</a></li>
+            <li class="msc"><a href="classic-rock.html#sultans-of-swing"></a>Sultans Of Swing - Dire Straits</li>
+            <li class="msc"><a href="classic-rock.html#sultans-of-swing"></a>I'm Still Standing - Elton John</li>
+            <li class="msc"><a href="classic-rock.html#sultans-of-swing"></a>November Rain - 2022 Version - Guns N' Roses</li>
+            <li class="msc"><a href="classic-rock.html#snow">Snow (Hey Oh) - Red Hot Chili Peppers</a></li>
+            <li class="msc"><a href="mpb.html#menina-veneno">Menina Veneno - Ritchie</a></li>
+            <li class="msc"><a href="mpb.html#o-astronauta-de-marmore">O Astronauta de Mármore - Nenhum De Nós</a></li>
+            <li class="msc"><a href="mpb.html#o-astronauta-de-marmore">Você Não Soube Me Amar - Blitz</a></li>
+            <li class="msc"><a href="mpb.html#como-eu-quero">Como eu quero - Kid Abelha e os Abóboras Selvagens</a></li>
+            <li class="msc"><a href="mpb.html#como-eu-quero">Pela Luz do Olhos Teus - Miúcha, Tom Jobim</a></li>
+            <li class="msc"><a href="mpb.html#burguesinha">Burguesinha - Seu Jorge</a></li>
+            <li class="msc"><a href="mpb.html#burguesinha">Aonde Quer Que Eu Vá - Os Paralamas Do Sucesso</a></li>
+            <li class="msc"><a href="mpb.html#burguesinha">Cálice - Chico Buarque, Milton Nascimento</a></li>
+            <li class="msc"><a href="mpb.html#vilarejo">Vilarejo - Marisa Monte</a></li>
+            <li class="msc"><a href="mpb.html#vilarejo">Já Sei Namorar - Tribalistas</a></li></center>
+          </ul>
+        </div>
+        <a href="contact.html"><button type="button" class="message"><i class="fa-regular fa-message"></i></button></a>
+      </nav>
+
+      <center><div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="2" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="dance-pop.html">
+              <img class="d-block" src="img/Dance-pop.png" alt="Primeiro Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="pop.html">
+              <img class="d-block" src="img/Pop.png" alt="Primeiro Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="rock.html">
+              <img class="d-block" src="img/Rock.png" alt="Terceiro Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="rock-nacional.html">
+              <img class="d-block" src="img/Rock-nacional.png" alt="Quarto Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="rb.html">
+              <img class="d-block" src="img/RB.png" alt="Quinto Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="indie.html">
+              <img class="d-block" src="img/Indie.png" alt="Sexto Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="alternative-rock.html">
+              <img class="d-block" src="img/Alternative-rock.png" alt="Sétimo Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="alternative-indie.html">
+              <img class="d-block" src="img/Alternative-indie.png" alt="Oitavo Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="mellow.html">
+              <img class="d-block" src="img/Mellow.png" alt="Nono Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="indietronica.html">
+              <img class="d-block" src="img/Indietronica.png" alt="Décimo Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="classic-rock.html">
+              <img class="d-block " src="img/Classic-rock.png" alt="Décimo Primeiro Slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="mpb.html">
+              <img class="d-block" src="img/MPB.png" alt="Décimo Segundo">
+            </a>
+          </div>
+        </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+      </div></center>
+      <footer>
+        <div id="footer-content">
+          <div id="footer-contacts">
+            <a href="#" class="footer-link" id="spotify">
+              <i class="fa-brands fa-spotify"></i>
+            </a>
+            <p>Spotify</p>
+            <p id="footer-copyright">
+              Juliana Ferreira -
+              &#169
+              2024 todos os direitos reservados
+            </p>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>
